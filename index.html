@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Drew Slone--Full Stack Development</title>
-		<link rel="stylesheet" type="text/css" href="./CSS/slone_2.css">
+		<link rel="stylesheet" type="text/css" href="./CSS/style.css">
 	</head>
 
 <!-- Body -->
@@ -13,20 +13,23 @@
 
 <!-- Navbar -->
 	<div class="Navbar">
-		<a class="active" href="#Home">Home</a> 
+		<a class="active" href="#Home">Home</a>
+		<a href="#Slideshow">Slideshow</a> 
 		<a href="#About">About</a>
-		<a href="#GitHub">GitHub</a>
-		<a href="#Contact">Contact</a>
+		<a href="#GitHub">Github</a>
+		<a onclick="openForm()" ondblclick="closeForm()">Contact</a>
 	</div>
 
 <!-- Home -->
-		<br> 
+	<div id="Home">
 		<br>
+		<br>
+		
 
 <!-- Video -->
-	<div id="Home">
+	
 		<video autoplay muted loop id="Typing_Video"> 
-			<source src="./video/code_1.mp4" type="video/mp4">
+			<source src=".//video/code_1.mp4" type="video/mp4">
 			Your browser does not support HTML5 video. 
 		</video>
 	</div>
@@ -37,34 +40,105 @@
 			<p> 
 				<strong>
 					<center>
-						<q>You might not think that programmers are artists, <br>but programming is an extremely creative profession. <br>
+						<q>You might not think that programmers are artists,<br> but programming is an extremely creative profession. <br>
                             It's logic-based creativity.
                         </q>
 						<h5>-John Romero, co-founder id Software</h5>
                         <br>
-                        My name is Drew Slone. Welcome to my portfolio website. This site is currently in it's infancy.<br>  I am a student at The Tech Academy here in Portland,
-                        Oregon and as my knowledge and skills grow,<br> so too will this website.<br>
-						<br>Thank you for visting and I hope to hear from you soon.
+                        My name is Drew Slone. Welcome to my portfolio website. <br>This site is currently in it's infancy.<br>  I am a student at The Tech Academy here in Portland,
+                        Oregon <br>and as my knowledge and skills grow, so too will this website.<br>
+						Thank you for visting and I hope to hear from you soon.
 					</center>	
 				</strong>
 			</p> 
 	</div>
 
+
+	<!-- Slideshow section -->
+	<div id="Slideshow">
+		<div id="Slideshow_Background"> 
+		  <div id="Slideshow_Container">
+			
+			<div class="mySlides fade">
+			  <div class="Slide_Number">1 / 6</div>
+				<img class="Slide_Show_Images" src="./images/portland_1.jpg" style="width:100%">
+				  <div class="text">Located here in beautiful Portland, Oregon!</div>
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="Slide_Number">2 / 6</div>
+				<img class="Slide_Show_Images" src="./images/HTML_CSS_and_JavaScript.jpeg" style="width:100%">
+				  <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+			</div>
+	
+			<div class="mySlides fade">
+			  <div class="Slide_Number">3 / 6</div>
+				<img class="Slide_Show_Images" src="./images/Python.png" style="width:100%">
+				  <div class="text">the popular programming language Python,</div>
+			</div>
+	
+			<div class="mySlides fade">
+			  <div class="Slide_Number">4 / 6</div>
+				<img class="Slide_Show_Images" src="./images/C_Sharp_and_Dot_NET.png" style="width:100%">
+				  <div class="text">C#, .NET Framework, ASP.NET, MVC,</div>
+			</div>
+	
+			<div class="mySlides fade">
+			  <div class="Slide_Number">5 / 6</div>
+				<img class="Slide_Show_Images" src="./images/SQL_and_Database.jpg" style="width:100%">
+				  <div class="text">back end development, databases and SQL.</div>
+				</div>
+	
+			<div class="mySlides fade">
+			  <div class="Slide_Number">6 / 6</div>
+				<img class="Slide_Show_Images" src="./images/typing_1.webp" style="width:100%">
+				  <div class="text"> 
+					<a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
+				  </div>
+			</div>
+		
+			  <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+			
+		  </div>
+	  <br>
+	
+		  <div style="text-align:center">
+	 
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+			<span class="dot" onclick="currentSlide(4)"></span> 
+			<span class="dot" onclick="currentSlide(5)"></span> 
+			<span class="dot" onclick="currentSlide(6)"></span> 
+	
+		  </div>
+		</div>
+	  </div>
+
+
+
+
+
+
+
+
+
 <!-- About section -->
 	<div class="Row" id="About"> 
 		<div class="Column_2"> 
-			<img src="./images/cool_laptop_crop.jpg" alt="Laptop">
+			<img src=".//Images/cool_laptop_crop.jpg" alt="Laptop">
 		</div>
   
 		<div class="Column_1"> 
 			<h1>About</h2>
-				<p> As a sushi chef of 15 years, I approach my life with the Japanese ideaology of Kaizen--"change for the better".  After being layed-off back in March 2020 and not being able to work, 
-					I knew I needed to commit to a new challenge in my life and learn a new skill.  
-					I am a logical thinker who enjoys solving puzzles and finding creative solutions.  
+				<p> As a sushi chef of 15 years, I approach my life with the Japanese ideaology of Kaizen--"change for the better". 
+					 After being laid-off, due to Coronavirus, in March 2020, I knew I needed to commit to a new challenge in my life
+					and learn a new skill.  I am a logical thinker who enjoys solving puzzles and finding creative solutions.  
 					<br><br>
 					I am currently a student of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and training 
-					in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. <br><br>I am a full-stack developer 
-					and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
+					in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, Python and more. <br><br>I am a full-stack developer 
+					and would love to work with you on your next project. <a href="#Contact">Contact</a> me below!</p>
 		</div>
 	</div>
 
@@ -84,29 +158,33 @@
 		</div>
 		
 		<div class="Column_2"> 
-			<a href="https://github.com/SloneBone" target="_blank"><img src="./images/logo_github_1.png" alt="GitHub Logo"></a>
+			<a href="https://github.com/SloneBone" target="_blank"><img src=".//Images/logo_GitHub_1.png" alt=""></a>
 		</div>
 	</div>
 
-<!-- Contact section -->
-	<div class="Row" id="Contact"> 
-		<div class="Column_3"> 
-			<img src="./images/typing_1.webp" alt="Typing on a Keyboard">
-		</div>
-	
-		<div class="Column_1"> 
-			<h1>Contact</h2> 
-				<form action="" method="get">
-					<label>Name:</label>
-						<input type="text" placeholder="Please enter your name here">
-					<label>Email:</label>
-						<input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-					<label>Message:</label>
-						<input type="text" id="Message" name="Message" placeholder="Please write your message here">
-						<input type="submit" value="Submit">
-				</form>
-		</div>
-	</div>
+
+
+
+	<!-- Contact section -->
+	<div id="Contact"> 
+		<button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
+		  <div class="form-popup" id="myForm">
+			<form action="https://formspree.io/f/mwkwbydk" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+			<h1>Contact</h1>
+				<label for="name"><b>Name</b></label>
+				  <input type="text" placeholder="Type your name here" name="name" required>
+				<label for="phone"><b>Phone</b></label>
+				  <input type="text" placeholder="Enter your phone number here" name="phone">
+				<label for="email"><b>Email</b></label>		
+				  <input type="text" placeholder="Type your email address here" name="email" required>
+				<label for="message"><b>Message</b></label>
+				  <input type="text" placeholder="Type your message here" name="message">
+	 
+		<button type="submit" class="btn">SUBMIT</button>
+		<button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+			</form>
+		  </div>
+	  </div>
 	
 <!-- Footer section -->
 	<footer><br>
@@ -115,6 +193,8 @@
 		</p>
 	</footer>
 
-		</body>
+	<script src="./JS/main.js"></script>
+
+	</body>
 
 </html>
