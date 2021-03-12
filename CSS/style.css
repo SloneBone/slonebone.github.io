@@ -59,9 +59,9 @@ body.fade-out	{
 }
 
 /* Navbar home button */
-.Navbar a.active { 
-  background-color: rgb(86, 165, 240);
-}
+	.Navbar a.active {
+		background-color: rgb(255, 255, 255);
+	}
 
 
 /* The animation effect for moving the nav bar in from above the top of the screen upon page load */
@@ -93,17 +93,26 @@ body.fade-out	{
 	animation: zoominoutsinglefeatured 5s;
 }
 
-		/* Text over the video */ 
-.Video_Text { 
-	background: rgba(86, 165, 240, 0.5); 
-	color: white; 
+		/* Text over the video */
+.Video_Text {
+	background: rgba(15, 47, 140, 0.5);
+	color: white;
 	width: 100%;
 	padding-top: .1vh;
-	padding-bottom: 1vh; 
+	padding-bottom: 1vh;
 	margin-top: 23%;
-		position: relative;
+	position: relative;
 	-webkit-animation: moveNav 4s;
-		animation: movevideoText 4s;
+	animation: movevideoText 4s;
+}
+.quote{
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+}
+.welcome {
+	text-align: center;
+	font-weight: bold;
 }
 
 /* This causes the video to zoom out from a zoomed in position upon page load */
@@ -115,12 +124,6 @@ body.fade-out	{
         transform: scale(1,1);
     }
 }
-
-
-
-
-
-
 
 
 
@@ -142,9 +145,9 @@ body.fade-out	{
 	float: left;
 	width: 50%;
 	padding: .75%;
-	padding-top: 1.5%;
+	padding-top: 2.5%;
 	height: 550px;
-	background-color: rgb(255, 228, 196);
+	background-color: rgb(81, 181, 141);
 }
 
 
@@ -161,14 +164,24 @@ h1 {
 	font-family: 'Courier New', Courier, monospace;
 	text-align: center;
 	margin-top: 1.5%;
-	color: #00375c ;
+	color: white;
+}
+h3 {
+	text-transform: uppercase;
+	font-family: 'Courier New', Courier, monospace;
+	text-align: center;
+	margin-top: 2.5%;
+	color: #00375c;
+}
+.author {
+	text-align: center;
+	color: rgb(245, 126, 15);
 }
 
 /*Heading 5 elements */
 h5 {
 	text-align: center;
 	color: #00375c;
-
 }
 
 /* Paragraph elements */
@@ -194,9 +207,36 @@ center {
 
 /* Anchor elements */
 a {
-	color: blue; 
+	color: blue;
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+}
+#python-link {
+	text-align: center;
+	font-weight: bold;
+}
+#c-sharp-link {
+	text-align: center;
+	font-weight: bold;
 }
 
+.icons-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.icon-link {
+	margin-top: 8px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 5vw;
+	height: 5vw;
+	padding: 15px;
+	
+}
 /* Quotation elements */
 q {
 	font-style: italic;
